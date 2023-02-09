@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font family -->
+    <link
+      href="https://fonts.cdnfonts.com/css/euclid-circular-a"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Signup - Template</title>
+  </head>
+  <body>
+    <div class="login-card">
+      <img src="./assets/img/perfil.png" />
+      <h2>Registrar-se</h2>
+      <h3>Insira suas credenciais</h3>
+      <form class="login-form">
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="email"
+            placeholder="Email"
+            value="wat@gmail.com"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Senha"
+          onkeyup="handleChange()"
+        />
+        <div id="bars">
+          <div></div>
+        </div>
+        <div class="strength" id="strength"></div>
+        <button class="control" type="button">REGISTRAR AGORA</button>
+      </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
